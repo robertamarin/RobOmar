@@ -1,1 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rob & Omar: Weirdly Wonderful</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      }
 
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        background: radial-gradient(circle at top, #1f0433, #0b0b17 55%, #02010a 100%);
+        color: #f5e9ff;
+      }
+
+      header {
+        padding: 4rem 8vw 2rem;
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: clamp(2.4rem, 4vw, 4rem);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        margin-bottom: 0.8rem;
+      }
+
+      header p {
+        max-width: 50rem;
+        margin: 0 auto;
+        line-height: 1.6;
+        color: #d2c1ff;
+      }
+
+      .gallery {
+        display: grid;
+        gap: 2.5rem;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        padding: 2rem 8vw 5rem;
+      }
+
+      .card {
+        position: relative;
+        padding: 2.5rem 2rem 3rem;
+        border-radius: 24px;
+        background: linear-gradient(140deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.01));
+        box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+        overflow: hidden;
+      }
+
+      .card h2 {
+        margin: 1.6rem 0 0.6rem;
+        font-size: 1.7rem;
+      }
+
+      .card p {
+        margin: 0;
+        color: #dbcfff;
+        line-height: 1.5;
+      }
+
+      .image-wrap {
+        height: 240px;
+        display: grid;
+        place-items: center;
+        background: rgba(12, 10, 29, 0.65);
+        border-radius: 18px;
+        position: relative;
+      }
+
+      .image-wrap::after {
+        content: "";
+        position: absolute;
+        inset: -40% 20% 10% 20%;
+        background: radial-gradient(circle, rgba(255, 0, 188, 0.3), transparent 70%);
+        filter: blur(35px);
+      }
+
+      .badge {
+        position: absolute;
+        top: 1.2rem;
+        right: 1.2rem;
+        padding: 0.3rem 0.8rem;
+        border-radius: 999px;
+        background: rgba(255, 255, 255, 0.14);
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        color: #f3daff;
+      }
+
+      footer {
+        text-align: center;
+        padding: 1rem 8vw 3rem;
+        color: #a694ce;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Rob &amp; Omar</h1>
+      <p>
+        A cosmic celebration of two legends rendered in the most delightfully weird visuals we could
+        summon. The portraits below are surreal, electric, and unmistakably Rob + Omar.
+      </p>
+    </header>
+
+    <main class="gallery">
+      <section class="card">
+        <div class="badge">Rob</div>
+        <div class="image-wrap">
+          <img
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'><defs><linearGradient id='g1' x1='0' x2='1' y1='0' y2='1'><stop offset='0' stop-color='%23ff9bd8'/><stop offset='1' stop-color='%235a1bff'/></linearGradient></defs><rect width='320' height='240' rx='26' fill='%230c0b1f'/><circle cx='160' cy='120' r='88' fill='url(%23g1)' opacity='0.8'/><circle cx='120' cy='110' r='38' fill='%23011d35' opacity='0.8'/><circle cx='200' cy='120' r='46' fill='%23ffd866' opacity='0.9'/><path d='M60 210 Q160 140 260 210' stroke='%23a8fffc' stroke-width='10' fill='none' stroke-linecap='round'/><circle cx='140' cy='105' r='10' fill='%23ffffff'/><circle cx='210' cy='120' r='12' fill='%23000000'/><path d='M100 70 L70 30' stroke='%23ff9bd8' stroke-width='6' stroke-linecap='round'/><path d='M220 70 L250 30' stroke='%23ff9bd8' stroke-width='6' stroke-linecap='round'/><circle cx='70' cy='30' r='8' fill='%23ff9bd8'/><circle cx='250' cy='30' r='8' fill='%23ff9bd8'/></svg>"
+            alt="Weird portrait of Rob as a cosmic neon avatar"
+          />
+        </div>
+        <h2>Rob: Neon Dream Weaver</h2>
+        <p>
+          Rob floats through a purple nebula with stardust antennas, warp-smile energy, and a grin
+          that bends the timeline.
+        </p>
+      </section>
+
+      <section class="card">
+        <div class="badge">Omar</div>
+        <div class="image-wrap">
+          <img
+            src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 320 240'><defs><linearGradient id='g2' x1='0' x2='1' y1='0' y2='1'><stop offset='0' stop-color='%2300f5d4'/><stop offset='1' stop-color='%23ff006e'/></linearGradient></defs><rect width='320' height='240' rx='26' fill='%23110a1f'/><ellipse cx='160' cy='120' rx='96' ry='78' fill='url(%23g2)' opacity='0.85'/><rect x='110' y='88' width='40' height='30' rx='12' fill='%23ffffff'/><rect x='170' y='88' width='40' height='30' rx='12' fill='%23000000'/><path d='M90 160 Q160 200 230 160' stroke='%23ffe66d' stroke-width='12' fill='none' stroke-linecap='round'/><circle cx='70' cy='60' r='18' fill='%2300f5d4'/><circle cx='250' cy='60' r='14' fill='%23ff006e'/><path d='M40 210 L120 150' stroke='%23ffffff' stroke-width='6' stroke-linecap='round'/><path d='M280 210 L200 150' stroke='%23ffffff' stroke-width='6' stroke-linecap='round'/></svg>"
+            alt="Weird portrait of Omar with surreal neon features"
+          />
+        </div>
+        <h2>Omar: Electric Storyteller</h2>
+        <p>
+          Omar’s aura is a kaleidoscope of synthwave colors, with mismatched eyes and a grin that
+          rewrites reality.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      Crafted to be wonderfully weird — long live the Rob &amp; Omar universe.
+    </footer>
+  </body>
+</html>
